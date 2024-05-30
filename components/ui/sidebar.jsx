@@ -111,7 +111,7 @@ const Sidebar = () => {
         {menuList.map((menu, index) => {
           return (
             <li key={index} className="mt-10">
-              <div className="text-sm text-textSoft font-bold">
+              <div className="text-sm text-textSoft font-bold mb-2">
                 {menu.title}
               </div>
               <ul className="flex flex-col gap-4 ml-4">
@@ -120,7 +120,7 @@ const Sidebar = () => {
                     <li key={index}>
                       <Link
                         href={item.path}
-                        className={`hover:bg-white hover:rounded-md hover:text-black flex items-center px-2 py-1 w-full text-lg gap-1 ${
+                        className={`hover:bg-white hover:rounded-md hover:text-black flex gap-4 items-center px-2 py-1 w-full text-lg ${
                           itme === item.title
                             ? "bg-white rounded-md text-black"
                             : ""
