@@ -18,32 +18,32 @@ const menuList = [
     title: "Pages",
     list: [
       {
-        title: "Dashboard",
+        title: "dashboard",
         icon: <RiDashboard2Line />,
         path: "/dashboard",
       },
       {
-        title: "Elections",
+        title: "elections",
         icon: <TbChecklist />,
         path: "/elections",
       },
       {
-        title: "Voters",
+        title: "voters",
         icon: <AiOutlineUser />,
         path: "/voters",
       },
       {
-        title: "Ballots",
+        title: "ballots",
         icon: <TbChecklist />,
         path: "/ballots",
       },
       {
-        title: "Candidates",
+        title: "candidates",
         icon: <FaUsers />,
         path: "/candidates",
       },
       {
-        title: "Questions",
+        title: "questions",
         icon: <BsFillQuestionSquareFill />,
         path: "/questions",
       },
@@ -53,12 +53,12 @@ const menuList = [
     title: "Analytics",
     list: [
       {
-        title: "Results",
+        title: "results",
         icon: <AiOutlineCheck />,
         path: "/results",
       },
       {
-        title: "Reports",
+        title: "reports",
         icon: <AiOutlineFileText />,
         path: "/reports",
       },
@@ -68,17 +68,17 @@ const menuList = [
     title: "User",
     list: [
       {
-        title: "Profile",
+        title: "profile",
         icon: <AiOutlineUser />,
         path: "/profile",
       },
       {
-        title: "Settings",
+        title: "settings",
         icon: <AiOutlineSetting />,
         path: "/settings",
       },
       {
-        title: "Logout",
+        title: "logout",
         icon: <AiOutlineLogout className="rotate-180" />,
         path: "/logout",
       },
@@ -115,7 +115,7 @@ const MobileSidebar = () => {
                         className="flex items-center mt-4 w-full text-md gap-2"
                       >
                         <div className="">{item.icon}</div>
-                        <div className="">{item.title}</div>
+                        <div className="capitalize">{item.title}</div>
                       </Link>
                     </li>
                   );

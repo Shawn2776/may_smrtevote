@@ -15,38 +15,39 @@ import { AiOutlineFileText } from "react-icons/ai";
 import Link from "next/link";
 import Footer from "./footer";
 import { MdSupervisedUserCircle } from "react-icons/md";
+import { usePathname } from "next/navigation";
 
 const menuList = [
   {
     title: "Pages",
     list: [
       {
-        title: "Dashboard",
+        title: "dashboard",
         icon: <RiDashboard2Line />,
         path: "/dashboard",
       },
       {
-        title: "Elections",
+        title: "elections",
         icon: <TbChecklist />,
         path: "/elections",
       },
       {
-        title: "Voters",
+        title: "voters",
         icon: <AiOutlineUser />,
         path: "/voters",
       },
       {
-        title: "Ballots",
+        title: "ballots",
         icon: <TbChecklist />,
         path: "/ballots",
       },
       {
-        title: "Candidates",
+        title: "candidates",
         icon: <FaUsers />,
         path: "/candidates",
       },
       {
-        title: "Questions",
+        title: "questions",
         icon: <BsFillQuestionSquareFill />,
         path: "/questions",
       },
@@ -56,12 +57,12 @@ const menuList = [
     title: "Analytics",
     list: [
       {
-        title: "Results",
+        title: "results",
         icon: <AiOutlineCheck />,
         path: "/results",
       },
       {
-        title: "Reports",
+        title: "reports",
         icon: <AiOutlineFileText />,
         path: "/reports",
       },
@@ -71,17 +72,17 @@ const menuList = [
     title: "User",
     list: [
       {
-        title: "Profile",
+        title: "profile",
         icon: <AiOutlineUser />,
         path: "/profile",
       },
       {
-        title: "Settings",
+        title: "settings",
         icon: <AiOutlineSetting />,
         path: "/settings",
       },
       {
-        title: "Logout",
+        title: "logout",
         icon: <AiOutlineLogout className="rotate-180" />,
         path: "/logout",
       },
@@ -90,6 +91,10 @@ const menuList = [
 ];
 
 const Sidebar = () => {
+  const pathname = usePathname();
+  const itme = pathname.split("/").pop();
+  console.log(itme);
+
   return (
     <div className="sticky top-0 w-full">
       <div className="flex items-center justify-center">
@@ -115,10 +120,14 @@ const Sidebar = () => {
                     <li key={index}>
                       <Link
                         href={item.path}
-                        className="flex items-center mt-4 w-full text-xl gap-2"
+                        className={`hover:bg-white hover:rounded-md hover:text-black flex items-center px-2 py-1 w-full text-lg gap-1 ${
+                          itme === item.title
+                            ? "bg-white rounded-md text-black"
+                            : ""
+                        }`}
                       >
                         <div className="">{item.icon}</div>
-                        <div className="">{item.title}</div>
+                        <div className="capitalize">{item.title}</div>
                       </Link>
                     </li>
                   );
