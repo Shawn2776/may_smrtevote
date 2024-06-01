@@ -15,7 +15,7 @@ const ProtectedLayout = ({ children }) => {
           <div className="flex items-center justify-between w-full pt-5 pb-5 bg-bgSoft">
             <Navbar />
           </div>
-          <div className="m-4 bg-bgSoft">{children}</div>
+          <div className="m-4">{children}</div>
         </div>
         <div className="hidden md:flex w-[20px] bg-bgSoft"></div>
       </div>
