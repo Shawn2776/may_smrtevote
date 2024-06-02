@@ -1,102 +1,620 @@
 export const elections = [
   {
-    id: 1,
-    title: "2022 General Elections",
-    startDate: "2022-08-09",
-    endDate: "2022-08-09",
+    id: 101,
+    title: "2024 Presidential Election",
+    startDate: "2024-11-05",
+    endDate: "2024-11-05",
     status: "upcoming",
     description:
-      "The 2022 General Elections will be held on the 9th of August 2022. The elections will be held in all the 47 counties in Kenya.",
+      "The 2024 Presidential Election will determine the next president of the United States.",
     candidates: [
       {
-        id: 1,
-        name: "John Doe",
-        party: "Jubilee Party",
-        manifesto:
-          "I am John Doe and I am running for the position of President of the Republic of Kenya. I am a visionary leader who has the best interests of the people at heart.",
-        votes: [
-          {
-            id: 1,
-            voterId: 1,
-          },
-        ],
+        id: 201,
+        name: "Alice Smith",
+        party: "Democratic Party",
+        manifesto: "A better future for all.",
+        votes: [],
+      },
+      {
+        id: 202,
+        name: "Bob Johnson",
+        party: "Republican Party",
+        manifesto: "Strong leadership for a strong country.",
+        votes: [],
       },
     ],
   },
   {
-    id: 2,
-    title: "2024 Elections",
-    startDate: "2022-08-09",
-    endDate: "2022-08-09",
-    status: "open",
+    id: 204,
+    title: "2024 Congressional Election",
+    startDate: "2024-11-05",
+    endDate: "2024-11-05",
+    status: "upcoming",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nam libero justo laoreet sit amet cursus sit amet dictum. Lacus laoreet non curabitur gravida arcu ac tortor dignissim convallis. In iaculis nunc sed augue lacus viverra vitae congue. Vulputate ut pharetra sit amet aliquam id diam. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce. Eget dolor morbi non arcu risus quis varius quam quisque. Cursus turpis massa tincidunt dui ut ornare lectus. Enim diam vulputate ut pharetra sit amet aliquam. Id porta nibh venenatis cras sed felis eget velit. Hac habitasse platea dictumst quisque sagittis purus sit amet volutpat. Imperdiet dui accumsan sit amet nulla facilisi. Suscipit adipiscing bibendum est ultricies integer quis. Nisl nunc mi ipsum faucibus vitae. Non pulvinar neque laoreet suspendisse interdum. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in. Lectus quam id leo in.      Rhoncus urna neque viverra justo nec. Tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus. Ullamcorper morbi tincidunt ornare massa. Libero justo laoreet sit amet cursus. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Dui ut ornare lectus sit amet est placerat in egestas. Sit amet consectetur adipiscing elit ut aliquam. Quam quisque id diam vel quam elementum pulvinar etiam. Tincidunt arcu non sodales neque sodales ut etiam. Enim praesent elementum facilisis leo vel fringilla est ullamcorper eget. Dictum at tempor commodo ullamcorper. Interdum varius sit amet mattis vulputate enim nulla aliquet. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Eget arcu dictum varius duis at consectetur lorem. Diam quis enim lobortis scelerisque fermentum dui faucibus in. In tellus integer feugiat scelerisque varius morbi enim nunc. In nisl nisi scelerisque eu ultrices vitae auctor.       Maecenas accumsan lacus vel facilisis volutpat est velit. Egestas integer eget aliquet nibh praesent. Ut pharetra sit amet aliquam id diam maecenas. Posuere morbi leo urna molestie at elementum eu. Consequat semper viverra nam libero justo. Risus viverra adipiscing at in tellus integer. Lectus proin nibh nisl condimentum id venenatis a condimentum. Netus et malesuada fames ac turpis egestas maecenas. Tincidunt eget nullam non nisi est sit. Varius vel pharetra vel turpis nunc eget lorem dolor. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris. Pellentesque pulvinar pellentesque habitant morbi tristique senectus. Urna molestie at elementum eu facilisis sed. Nisi porta lorem mollis aliquam ut porttitor leo a",
+      "The 2024 Congressional Election will elect members to the House of Representatives.",
     candidates: [
       {
-        id: 1,
-        name: "John Doe",
-        party: "Jubilee Party",
-        manifesto:
-          "I am John Doe and I am running for the position of President of the Republic of Kenya. I am a visionary leader who has the best interests of the people at heart.",
-        votes: [
-          {
-            id: 1,
-            voterId: 1,
-          },
-        ],
+        id: 203,
+        name: "Charlie Brown",
+        party: "Independent",
+        manifesto: "Bringing change to Congress.",
+        votes: [],
       },
+    ],
+  },
+  {
+    id: 207,
+    title: "2024 State Senate Election",
+    startDate: "2024-11-05",
+    endDate: "2024-11-05",
+    status: "upcoming",
+    description: "Election for state senate positions.",
+    candidates: [
       {
-        id: 2,
-        name: "Jane Doe",
-        party: "Jubilee Party",
-        manifesto:
-          "I am John Doe and I am running for the position of President of the Republic of Kenya. I am a visionary leader who has the best interests of the people at heart.",
-        votes: [
-          {
-            id: 1,
-            voterId: 1,
-          },
-        ],
+        id: 204,
+        name: "Daisy Adams",
+        party: "Democratic Party",
+        manifesto: "Progress for our state.",
+        votes: [],
       },
+    ],
+  },
+  {
+    id: 210,
+    title: "2024 Governor Election",
+    startDate: "2024-11-05",
+    endDate: "2024-11-05",
+    status: "upcoming",
+    description: "Election for the governor of the state.",
+    candidates: [
       {
-        id: 3,
-        name: "Albert Doe",
-        party: "Jubilee Party",
-        manifesto:
-          "I am John Doe and I am running for the position of President of the Republic of Kenya. I am a visionary leader who has the best interests of the people at heart.",
-        votes: [
-          {
-            id: 1,
-            voterId: 1,
-          },
-        ],
+        id: 205,
+        name: "Ethan Wright",
+        party: "Republican Party",
+        manifesto: "Leadership and vision.",
+        votes: [],
       },
+    ],
+  },
+  {
+    id: 213,
+    title: "2024 Mayoral Election",
+    startDate: "2024-11-05",
+    endDate: "2024-11-05",
+    status: "upcoming",
+    description: "Election for the mayor of the city.",
+    candidates: [
       {
-        id: 4,
-        name: "Roddy Doe",
-        party: "Jubilee Party",
-        manifesto:
-          "I am John Doe and I am running for the position of President of the Republic of Kenya. I am a visionary leader who has the best interests of the people at heart.",
-        votes: [
-          {
-            id: 1,
-            voterId: 1,
-          },
-        ],
+        id: 206,
+        name: "Fiona Green",
+        party: "Green Party",
+        manifesto: "A sustainable city.",
+        votes: [],
       },
+    ],
+  },
+  {
+    id: 216,
+    title: "2024 School Board Election",
+    startDate: "2024-11-05",
+    endDate: "2024-11-05",
+    status: "upcoming",
+    description: "Election for the school board members.",
+    candidates: [
       {
-        id: 5,
-        name: "Kimothian Doe",
-        party: "Jubilee Party",
-        manifesto:
-          "I am John Doe and I am running for the position of President of the Republic of Kenya. I am a visionary leader who has the best interests of the people at heart.",
-        votes: [
-          {
-            id: 1,
-            voterId: 1,
-          },
-        ],
+        id: 207,
+        name: "George King",
+        party: "Independent",
+        manifesto: "Better education for all.",
+        votes: [],
+      },
+    ],
+  },
+  {
+    id: 219,
+    title: "2024 City Council Election",
+    startDate: "2024-11-05",
+    endDate: "2024-11-05",
+    status: "upcoming",
+    description: "Election for the city council members.",
+    candidates: [
+      {
+        id: 208,
+        name: "Hannah Lee",
+        party: "Democratic Party",
+        manifesto: "Community first.",
+        votes: [],
+      },
+    ],
+  },
+  {
+    id: 222,
+    title: "2024 County Commissioner Election",
+    startDate: "2024-11-05",
+    endDate: "2024-11-05",
+    status: "upcoming",
+    description: "Election for the county commissioners.",
+    candidates: [
+      {
+        id: 209,
+        name: "Isaac Taylor",
+        party: "Republican Party",
+        manifesto: "Efficient county governance.",
+        votes: [],
+      },
+    ],
+  },
+  {
+    id: 225,
+    title: "Z State Assembly Election",
+    startDate: "2024-11-05",
+    endDate: "2024-11-05",
+    status: "upcoming",
+    description: "Election for the state assembly members.",
+    candidates: [
+      {
+        id: 210,
+        name: "Julia Martinez",
+        party: "Democratic Party",
+        manifesto: "Representing your voice.",
+        votes: [],
+      },
+    ],
+  },
+  {
+    id: 228,
+    title: "2024 Judicial Election",
+    startDate: "2024-11-05",
+    endDate: "2024-11-05",
+    status: "upcoming",
+    description: "Election for judicial positions.",
+    candidates: [
+      {
+        id: 211,
+        name: "Kevin Davis",
+        party: "Independent",
+        manifesto: "Fair and just judiciary.",
+        votes: [],
+      },
+    ],
+  },
+  {
+    id: 231,
+    title: "2024 Public Defender Election",
+    startDate: "2024-10-21",
+    endDate: "2024-12-21",
+    status: "upcoming",
+    description: "Election for the public defender position.",
+    candidates: [
+      {
+        id: 212,
+        name: "Laura Wilson",
+        party: "Democratic Party",
+        manifesto: "Justice for all.",
+        votes: [],
+      },
+    ],
+  },
+  {
+    id: 234,
+    title: "2024 Attorney General Election",
+    startDate: "2024-11-05",
+    endDate: "2024-11-05",
+    status: "upcoming",
+    description: "Election for the attorney general position.",
+    candidates: [
+      {
+        id: 213,
+        name: "Michael Brown",
+        party: "Republican Party",
+        manifesto: "Protecting our state.",
+        votes: [],
+      },
+    ],
+  },
+  {
+    id: 237,
+    title: "2024 Treasurer Election",
+    startDate: "2024-11-05",
+    endDate: "2024-11-05",
+    status: "upcoming",
+    description: "Election for the state treasurer position.",
+    candidates: [
+      {
+        id: 214,
+        name: "Natalie Thompson",
+        party: "Independent",
+        manifesto: "Responsible financial management.",
+        votes: [],
+      },
+    ],
+  },
+  {
+    id: 240,
+    title: "2024 Auditor Election",
+    startDate: "2024-11-05",
+    endDate: "2024-11-05",
+    status: "upcoming",
+    description: "Election for the state auditor position.",
+    candidates: [
+      {
+        id: 215,
+        name: "Oscar Hernandez",
+        party: "Democratic Party",
+        manifesto: "Transparency and accountability.",
+        votes: [],
+      },
+    ],
+  },
+  {
+    id: 243,
+    title: "2024 Tax Commissioner Election",
+    startDate: "2024-11-05",
+    endDate: "2024-11-05",
+    status: "upcoming",
+    description: "Election for the tax commissioner position.",
+    candidates: [
+      {
+        id: 216,
+        name: "Pamela Evans",
+        party: "Republican Party",
+        manifesto: "Fair tax policies.",
+        votes: [],
+      },
+    ],
+  },
+  {
+    id: 246,
+    title: "2024 Labor Commissioner Election",
+    startDate: "2024-11-05",
+    endDate: "2024-11-05",
+    status: "upcoming",
+    description: "Election for the labor commissioner position.",
+    candidates: [
+      {
+        id: 217,
+        name: "Quincy Rogers",
+        party: "Democratic Party",
+        manifesto: "Protecting workers' rights.",
+        votes: [],
+      },
+    ],
+  },
+  {
+    id: 249,
+    title: "2024 Agriculture Commissioner Election",
+    startDate: "2024-11-05",
+    endDate: "2024-11-05",
+    status: "upcoming",
+    description: "Election for the agriculture commissioner position.",
+    candidates: [
+      {
+        id: 218,
+        name: "Rachel Scott",
+        party: "Independent",
+        manifesto: "Supporting our farmers.",
+        votes: [],
+      },
+    ],
+  },
+  {
+    id: 252,
+    title: "2024 Insurance Commissioner Election",
+    startDate: "2024-11-05",
+    endDate: "2024-11-05",
+    status: "upcoming",
+    description: "Election for the insurance commissioner position.",
+    candidates: [
+      {
+        id: 219,
+        name: "Samuel Cooper",
+        party: "Republican Party",
+        manifesto: "Ensuring fair insurance practices.",
+        votes: [],
+      },
+    ],
+  },
+  {
+    id: 255,
+    title: "2024 Public Service Commissioner Election",
+    startDate: "2024-11-05",
+    endDate: "2024-11-05",
+    status: "upcoming",
+    description: "Election for the public service commissioner position.",
+    candidates: [
+      {
+        id: 220,
+        name: "Tina Lopez",
+        party: "Democratic Party",
+        manifesto: "Improving public services.",
+        votes: [],
+      },
+    ],
+  },
+  {
+    id: 258,
+    title: "2024 Railroad Commissioner Election",
+    startDate: "2024-11-05",
+    endDate: "2024-11-05",
+    status: "upcoming",
+    description: "Election for the railroad commissioner position.",
+    candidates: [
+      {
+        id: 221,
+        name: "Ulysses Grant",
+        party: "Independent",
+        manifesto: "Efficient and safe railroads.",
+        votes: [],
       },
     ],
   },
 ];
+
+export const voters = [
+  {
+    id: 301,
+    name: "John Doe",
+    email: "johndoe@example.com",
+    voterKey: "key301",
+    voterSecret: "secret301",
+    elections: [
+      {
+        electionId: 101,
+        votedFor: 201,
+      },
+    ],
+  },
+  {
+    id: 302,
+    name: "Jane Doe",
+    email: "janedoe@example.com",
+    voterKey: "key302",
+    voterSecret: "secret302",
+    elections: [
+      {
+        electionId: 204,
+        votedFor: 203,
+      },
+      {
+        electionId: 207,
+        votedFor: 204,
+      },
+    ],
+  },
+  {
+    id: 303,
+    name: "Jim Beam",
+    email: "jimbeam@example.com",
+    voterKey: "key303",
+    voterSecret: "secret303",
+    elections: [
+      {
+        electionId: 207,
+        votedFor: 204,
+      },
+    ],
+  },
+  {
+    id: 304,
+    name: "Nancy Drew",
+    email: "nancydrew@example.com",
+    voterKey: "key304",
+    voterSecret: "secret304",
+    elections: [
+      {
+        electionId: 210,
+        votedFor: 205,
+      },
+    ],
+  },
+  {
+    id: 305,
+    name: "Tom Sawyer",
+    email: "tomsawyer@example.com",
+    voterKey: "key305",
+    voterSecret: "secret305",
+    elections: [
+      {
+        electionId: 213,
+        votedFor: 206,
+      },
+    ],
+  },
+  {
+    id: 306,
+    name: "Harriet Tubman",
+    email: "harriettubman@example.com",
+    voterKey: "key306",
+    voterSecret: "secret306",
+    elections: [
+      {
+        electionId: 216,
+        votedFor: 207,
+      },
+    ],
+  },
+  {
+    id: 307,
+    name: "George Washington",
+    email: "georgewashington@example.com",
+    voterKey: "key307",
+    voterSecret: "secret307",
+    elections: [
+      {
+        electionId: 219,
+        votedFor: 208,
+      },
+    ],
+  },
+  {
+    id: 308,
+    name: "Abraham Lincoln",
+    email: "abrahamlincoln@example.com",
+    voterKey: "key308",
+    voterSecret: "secret308",
+    elections: [
+      {
+        electionId: 222,
+        votedFor: 209,
+      },
+    ],
+  },
+  {
+    id: 309,
+    name: "Martin Luther King Jr.",
+    email: "martinlutherkingjr@example.com",
+    voterKey: "key309",
+    voterSecret: "secret309",
+    elections: [
+      {
+        electionId: 225,
+        votedFor: 210,
+      },
+    ],
+  },
+  {
+    id: 310,
+    name: "Rosa Parks",
+    email: "rosaparks@example.com",
+    voterKey: "key310",
+    voterSecret: "secret310",
+    elections: [
+      {
+        electionId: 228,
+        votedFor: 211,
+      },
+    ],
+  },
+  {
+    id: 311,
+    name: "Mahatma Gandhi",
+    email: "mahatmagandhi@example.com",
+    voterKey: "key311",
+    voterSecret: "secret311",
+    elections: [
+      {
+        electionId: 231,
+        votedFor: 212,
+      },
+    ],
+  },
+  {
+    id: 312,
+    name: "Nelson Mandela",
+    email: "nelsonmandela@example.com",
+    voterKey: "key312",
+    voterSecret: "secret312",
+    elections: [
+      {
+        electionId: 234,
+        votedFor: 213,
+      },
+    ],
+  },
+  {
+    id: 313,
+    name: "Winston Churchill",
+    email: "winstonchurchill@example.com",
+    voterKey: "key313",
+    voterSecret: "secret313",
+    elections: [
+      {
+        electionId: 237,
+        votedFor: 214,
+      },
+    ],
+  },
+  {
+    id: 314,
+    name: "Franklin D. Roosevelt",
+    email: "franklindroosevelt@example.com",
+    voterKey: "key314",
+    voterSecret: "secret314",
+    elections: [
+      {
+        electionId: 240,
+        votedFor: 215,
+      },
+    ],
+  },
+  {
+    id: 315,
+    name: "Eleanor Roosevelt",
+    email: "eleanorroosevelt@example.com",
+    voterKey: "key315",
+    voterSecret: "secret315",
+    elections: [
+      {
+        electionId: 243,
+        votedFor: 216,
+      },
+    ],
+  },
+  {
+    id: 316,
+    name: "Margaret Thatcher",
+    email: "margaretthatcher@example.com",
+    voterKey: "key316",
+    voterSecret: "secret316",
+    elections: [
+      {
+        electionId: 246,
+        votedFor: 217,
+      },
+    ],
+  },
+  {
+    id: 317,
+    name: "Angela Merkel",
+    email: "angelamerkel@example.com",
+    voterKey: "key317",
+    voterSecret: "secret317",
+    elections: [
+      {
+        electionId: 249,
+        votedFor: 218,
+      },
+    ],
+  },
+  {
+    id: 318,
+    name: "Barack Obama",
+    email: "barackobama@example.com",
+    voterKey: "key318",
+    voterSecret: "secret318",
+    elections: [
+      {
+        electionId: 252,
+        votedFor: 219,
+      },
+    ],
+  },
+  {
+    id: 319,
+    name: "Michelle Obama",
+    email: "michelleobama@example.com",
+    voterKey: "key319",
+    voterSecret: "secret319",
+    elections: [
+      {
+        electionId: 255,
+        votedFor: 220,
+      },
+    ],
+  },
+  {
+    id: 320,
+    name: "Oprah Winfrey",
+    email: "oprahwinfrey@example.com",
+    voterKey: "key320",
+    voterSecret: "secret320",
+    elections: [
+      {
+        electionId: 258,
+        votedFor: 221,
+      },
+    ],
+  },
+  // Add more voters if needed...
+];
+
