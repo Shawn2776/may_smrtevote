@@ -38,6 +38,8 @@ const DashboardElectionsTable = (inElections) => {
         const dateA = new Date(a.startDate);
         const dateB = new Date(b.startDate);
         return order === "asc" ? dateA - dateB : dateB - dateA;
+      } else if (field === "percent") {
+        return order === "asc" ? a.percent - b.percent : b.percent - a.percent;
       }
       return 0;
     });
@@ -66,7 +68,7 @@ const DashboardElectionsTable = (inElections) => {
       <div className="grid grid-cols-5 gap-2 px-2 mx-2">
         <div className="flex w-full col-span-2">
           <h2
-            className="text-xl font-bold cursor-pointer"
+            className="font-bold cursor-pointer"
             onClick={() => handleSort("title")}
           >
             Title{getSortSymbol("title")}
@@ -77,8 +79,10 @@ const DashboardElectionsTable = (inElections) => {
             Date Range{getSortSymbol("dateRange")}
           </p>
         </div>
-        <div className="flex w-full col-span-1 ">
-          <p className="w-full text-center">Percent Complete</p>
+        <div className="flex w-full col-span-1">
+          <p className="cursor-pointer" onClick={() => handleSort("percent")}>
+            % Complete{getSortSymbol("percent")}
+          </p>
         </div>
       </div>
       <div className="min-h-[250px]">
