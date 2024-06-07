@@ -1,25 +1,14 @@
-import { voters } from "@/data";
+import { getVotersByUserId } from "@/actions/voters";
+import VoterList from "@/components/voter-list";
+import React from "react";
 
-const VotersPage = () => {
+const VoterPage = async () => {
+  const voters = await getVotersByUserId();
   return (
     <div>
-      {voters.map((voter) => (
-        <div key={voter.id}>
-          <h2>{voter.name}</h2>
-          <p>{voter.email}</p>
-          <p>{voter.voterKey}</p>
-          <p>******</p>
-          <p>
-            {voter.elections.map((election, index) => (
-              <div key={index}>
-                <span>Election ID: {election.electionId}</span>
-              </div>
-            ))}
-          </p>
-        </div>
-      ))}
+      <VoterList voters={voters} />
     </div>
   );
 };
 
-export default VotersPage;
+export default VoterPage;
