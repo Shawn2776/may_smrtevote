@@ -5,8 +5,10 @@ import React from "react";
 const VoterPage = async () => {
   const voters = await getVotersByUserId();
   return (
-    <div>
-      <VoterList voters={voters} />
+    <div className="min-h-screen bg-bg">
+      <div className="p-5 rounded-md bg-bgSoft">
+        <VoterList voters={voters} />
+      </div>
     </div>
   );
 };

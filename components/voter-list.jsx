@@ -9,10 +9,12 @@ import {
   TableRow,
 } from "./ui/table";
 import { Button } from "./ui/button";
+import Header from "./ui/dashboard/header";
 
 const VoterList = ({ voters }) => {
   return (
-    <div className="w-full">
+    <div className="w-full min-h-[600px]">
+      <Header type="voter" action="View all your voters" />
       <Table>
         <TableCaption>A list of your voters.</TableCaption>
         <TableHeader>

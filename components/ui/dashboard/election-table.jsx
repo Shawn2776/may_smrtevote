@@ -21,11 +21,13 @@ import { Popover, PopoverContent, PopoverTrigger } from "../popover";
 import Link from "next/link";
 import { MdDelete, MdMore, MdUpdate } from "react-icons/md";
 import { Button } from "../button";
+import Header from "./header";
 
 const ElectionTable = ({ elections }) => {
   console.log(elections);
   return (
     <div className="w-full min-h-[600px]">
+      <Header type="election" action="View all your elections" />
       <Table>
         <TableCaption>A list of your elections.</TableCaption>
         <TableHeader>
@@ -43,7 +45,7 @@ const ElectionTable = ({ elections }) => {
           {elections.map((election) => (
             <TableRow
               key={election.id}
-              className="hover:bg-red-500 cursor-pointer transition-all ease-in-out duration-200"
+              className="transition-all duration-200 ease-in-out cursor-pointer hover:bg-red-500"
             >
               <TableCell className="font-medium">{election.name}</TableCell>
               <TableCell>{`${election.electionDate}`}</TableCell>
@@ -70,22 +72,40 @@ const ElectionTable = ({ elections }) => {
               <TableCell>
                 <Popover>
                   <PopoverTrigger>
-                    {election.Ballot.Question.length > 0
-                      ? "View Questions"
-                      : "View Candidates"}
+                    {election.electionType === "poll"
+                      ? election.Ballot.Question.length > 0
+                        ? "View Questions"
+                        : "Add Question"
+                      : election.Ballot.Candidate.length > 0
+                      ? "View Candidates"
+                      : "Add Candidate"}
                   </PopoverTrigger>
                   <PopoverContent>
                     {election.Ballot.Question.length > 0
                       ? election.Ballot.Question.map((q) => (
                           <div key={q.id}>
                             <Popover>
-                              <PopoverTrigger>{q.question}</PopoverTrigger>
+                              <PopoverTrigger className="px-2 py-1 rounded-md hover:bg-neutral-500 hover:text-white">
+                                {q.question}
+                              </PopoverTrigger>
                               <PopoverContent>
                                 <ul>
-                                  <li>{q.option1}</li>
-                                  <li>{q.option2}</li>
-                                  <li>{q.option3}</li>
-                                  <li>{q.option4}</li>
+                                  <li>
+                                    {q.option1 ? "1. " : ""}
+                                    {q.option1}
+                                  </li>
+                                  <li>
+                                    {q.option2 ? "2. " : ""}
+                                    {q.option2}
+                                  </li>
+                                  <li>
+                                    {q.option3 ? "3. " : ""}
+                                    {q.option3}
+                                  </li>
+                                  <li>
+                                    {q.option4 ? "4. " : ""}
+                                    {q.option4}
+                                  </li>
                                 </ul>
                               </PopoverContent>
                             </Popover>
@@ -94,7 +114,9 @@ const ElectionTable = ({ elections }) => {
                       : election.Ballot.Candidate.map((c) => (
                           <div key={c.id}>
                             <Popover>
-                              <PopoverTrigger>{c.name}</PopoverTrigger>
+                              <PopoverTrigger className="px-2 py-1 rounded-md hover:bg-neutral-500 hover:text-white">
+                                {c.name}
+                              </PopoverTrigger>
                               <PopoverContent>
                                 <ul>
                                   <li>{c.position}</li>
@@ -119,9 +141,11 @@ const ElectionTable = ({ elections }) => {
       </Table>
 
       <div className="flex justify-center">
-        <Button className="mt-16 icon">Create New Election</Button>
+        <Button className="mt-16 text-white" variant="icon">
+          Create New Election
+        </Button>
       </div>
-      <hr className="mb-4 mt-4" />
+      <hr className="mt-4 mb-4" />
       <Pagination>
         <PaginationContent>
           <PaginationItem>
